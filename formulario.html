@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Tags e Atributos para Formulários</h1>
+        <hr>
+    </header>
+    <main>
+        <p>Interface com campos para entrada e seleção de dados</p>
+        <!-- Grupo de campos -->
+        <form action="" method="post">
+            <!-- Nome -->
+            <p>
+                <label for="nome">Nome:</label>
+                <input required placeholder="Digite seu nome" type="text" name="nome" id="nome">
+            </p>
+            <!-- E-mail -->
+            <p>
+                <label for="email">E-mail:</label>
+                <input required placeholder="Digite seu e-mail" type="email" name="email" id="email">
+            </p>
+            <p>
+                Deseja receber informativos?<br>
+                <input type="radio" name="informativo" id="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" name="informativo" id="nao">
+                <label for="nao">Não</label>
+            </p>
+            <p>
+                Escolha as tecnologias de sua preferência<br>
+                <input type="checkbox" name="tecnologias" id="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" name="tecnologias" id="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" name="tecnologias" id="javascript">
+                <label for="javascript">JavaScript</label>
+
+            </p>
+            <!-- Data de Nascimento -->
+            <p>
+                <label for="data">Data de cssascimento:</label>
+                <input type="date" name="data" id="data">
+            </p>
+            <!-- Assunto -->
+            <p>
+                <label for="assunto">Assunto:</label>
+                <select required name="assunto" id="assunto">
+                    <option value="-1"></option>
+                    <option value="1">Reclamações</option>
+                    <option value="2">Me dá dinheiro</option>
+                    <option value="3">Compra de paçoca</option>
+                    <option value="4">Sem assunto</option>
+                </select>
+            </p>
+            <!-- Mensagem -->
+            <p>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea required placeholder="mínimo de 5 e máximo de 50 caracteres" maxlength="240" name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </p>
+            <!-- Senha -->
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </p>
+            <!-- Botão -->
+            <p>
+                <button type="submit">Enviar &#10003;</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

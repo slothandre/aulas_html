@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        .titulo {
+            text-align: center;
+        }
+        .divulgacao {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="hello_world.html">🏠 Home</a>
+    <h1 class="titulo">Trabalhando com imagens</h1>
+    <hr>
+    <h2>Formatos mais comuns para web</h2>
+    <ul>
+        <li>JPEG/JPG: em geral para fotos com suporte a milhões de cores e com compressão.</li>
+        <li>GIF: usado para desenhos, suporta animação e transparência.</li>
+        <li>PNG: bom para fotos com milhões de cores, suporte a compressão e transparência</li>
+        <li>SVG: formato vetorial, ou seja, baseado em nós, segmentos, linhas. Bom para ilustrações e para casos em que será necessário redimensionar a imagem.</li>
+    </ul>
+    <hr>
+    <h2>Exemplos</h2>
+    <!-- 
+        - Tag <img>
+        - Atributos:
+            src: indica o caminho do arquivo de imagem e o próprio arquivo
+            alt: texto alternativo (pequena descrição da imagem)
+    -->
+    <img src="imagens/pink-floyd.jpg" alt="Os véio do pink floyd se despedindo da rapaziada">
+    <!-- Imagens dentro de outras tags -->
+    <p>
+        <img src="imagens/logo-html5.png" alt="Logo HTML5">
+        <img src="imagens/logo-css3.gif" alt="Logo CSS3">
+        <img src="imagens/logo-javascript.gif
+        " alt="Logo JavaScript">
+    </p>
+    <!-- Imagens são colocadas lado a lado (se houver espaço na tela) -->
+    <p>
+        <img src="imagens/dedos.jpg" alt="3 dedos com rosto felies">
+        <img src="imagens/ideias.jpg" alt="6 bolinhas de papel coloridas simulando varias ideias">
+        <img src="imagens/pacoca.jpg" alt="4 paçocas suculentas">
+    </p>
+    <!-- Imagens são colocadas uma em cima da outra, não importando o tamanho da tela -->
+    <p><img src="imagens/dedos.jpg" alt=""></p>
+    <p><img src="imagens/ideias.jpg" alt=""></p>
+    <p><img src="imagens/pacoca.jpg" alt=""></p>
+    <!-- Novidade no HTML5 para ilustrações em geral -->
+    <hr>
+    <figure>
+        <img src="imagens/stonehenge.jpg" alt="">
+        <figcaption>Ruínas do Stonehenge (foto tirada em 2012)</figcaption>
+    </figure>
+    <hr>
+    <!-- Imagens png/jpg/gif: BITMAP (formadas por pixels) -->
+    <p><img src="imagens/black-cat.png" alt=""></p>
+    <!-- Imagem svg: vetor (formada por nós, linhas) -->
+    <p><img src="imagens/black-cat.svg" alt=""></p>
+    <hr>
+    <p class="divulgacao">Site desenvolvido por <a target="_blank" href="https://instagram.com/sloth.andre">@sloth.andre</a></p>
+</body>
+</html>

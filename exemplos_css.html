@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de CSS</title>
+    <!-- COMENTÁRIO DE HTML -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+        /* COMENTÁRIO DE CSS */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Regra CSS para tag body */
+        body {
+            background-color: antiquewhite;
+            font-family: Comic Sans MS;
+        }
+        h1 {
+            text-transform: uppercase;
+            text-shadow: black 1px 1px 3px;
+            color: firebrick;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Bungee Spice', Impact, Verdana cursive;
+        }
+        h2 {
+            color: orangered;
+            text-shadow: 3px 3px 3px black;
+            font-size: 36px;
+        }
+        h3 {
+            color: #44a6d3;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: normal;
+            font-size: 24px;
+        }
+        p{
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 25px;
+        }
+        .divulgacao {
+            text-align: center;
+            font-weight: bold;
+        }
+        /* Exercícios: faça uma regra CSS para os conteúdos (artigos: Classic Rock, Rock Progressivo e Heavy Metal) com as seguintes características: 
+        
+        - cor de plano de fundo: gradiente de cores (quaisquer cores)
+        - cantos arredondados: use o valor que quiser
+        - espaçamento interno de 20px
+        - sombra na área do artigo (use os valores que quiser)
+        - espaçamento externo de 50px  */
+        article {
+            background-image: linear-gradient(to right bottom, #FF0000, #FF7F00, #FFFF00, #00FF00, #00FFFF,  #0000FF, #8B00FF);
+            box-shadow: 7px 7px 5px #999;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body id="topo">
+    <!-- CABEÇALHO -->
+    <header>
+        <a href="hello_world.html">🏠 Home</a>
+        <h1>Exemplos de CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="#classic_rock">Classic Rock</a></li>
+                <li><a href="#rock_progressivo">Rock Progressivo</a></li>
+                <li><a href="#heavy_metal">Heavy Metal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <h2>Estilos Musicais</h2>
+        <article id="classic_rock">
+            <h3>Classic Rock</h3>
+            <p>Rock clássico (classic rock em inglês) é uma definição dada a músicos de rock'n'roll considerados inovadores, surgidos principalmente entre o princípio da década de 1960 e final da década de 70.</p>
+            <p>O termo foi criado por estações de rádio para definir a programação que evoluiu a partir do formato album-oriented rock no começo da década de 80.</p>
+            <p>Embora não seja especificamente um estilo, geralmente serve de rótulo a bandas como Beatles, Rolling Stones e The Who,entre outras.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat voluptates assumenda ea dolorum quas neque, alias excepturi. Facilis hic enim numquam vel quas vero adipisci sint ut minus debitis?</p>
+            <p>Ea architecto voluptate dolores, asperiores perferendis alias, commodi quod minus, veritatis similique laboriosam necessitatibus sint quibusdam sapiente unde nobis tenetur provident error in! Provident officiis quasi at iure cumque architecto!</p>
+            <p>Sed expedita maiores, reprehenderit in ducimus harum rerum, earum facilis enim dolores iste molestias aspernatur voluptas fuga, alias dolorem error ipsum eius! Modi, at odio. Obcaecati totam eius magnam ratione.</p>
+            <section>
+                <h4>Black Sabbath</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, aliquid?</p>
+            </section>
+            <section>
+                <h4>Deep Purple</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, placeat.</p>
+            </section>
+            <section>
+                <h4>Led Zeppelin</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, quae?</p>
+            </section>
+            <p><a href="#topo">Voltar ao topo</a></p>
+        </article>
+        <article id="rock_progressivo">
+            <h3>Rock Progressivo</h3>
+            <p>Rock progressivo (também abreviado por prog rock ou prog) é um estilo de música de rock que surgiu no fim da década de 1960, na Inglaterra. Conseguiu se tornar muito popular na década de 1970, mas ainda hoje possui muitos adeptos.</p>
+            <p>O estilo recebeu influências da música clássica e do jazz fusion, em contraste com o rock estadunidense historicamente, influenciado pelo rhythm and blues e pela música country.</p>
+            <p>Ao longo dos anos apareceram muitos sub-géneros deste estilo tais como o rock sinfônico, o space rock, o krautrock, o R.I.O e o metal progressivo. Praticamente todos os países desenvolveram músicos ou agrupamentos musicais voltados a esse gênero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, modi saepe enim repellat, adipisci iusto exercitationem suscipit molestiae nisi animi incidunt minus esse tempora! Quae doloremque aspernatur possimus deleniti provident?</p>
+            <p>Perspiciatis laboriosam quibusdam accusamus numquam alias, ab porro ratione error labore esse quas cum velit maiores modi nobis id quis aspernatur officiis sed maxime quos minima harum? Hic, sint deserunt.</p>
+            <p>Dignissimos placeat qui, voluptate numquam voluptatum soluta facere labore temporibus necessitatibus autem, accusamus nobis sed enim molestias eum quia recusandae esse ratione voluptas deserunt. Quaerat perferendis qui cumque vel dolores?</p>
+            <p><a href="#topo">Voltar ao topo</a></p>
+        </article>
+        <article id="heavy_metal">
+            <h3>Heavy Metal</h3>
+            <p>O heavy metal (muitas vezes referido apenas como metal) é um gênero do rock que se desenvolveu no final da década de 1960 e no início da década de 1970, em grande parte, na Inglaterra e nos Estados Unidos.</p>
+            <p>Tendo como raízes o blues-rock e o rock psicodélico, as bandas que criaram o gênero desenvolveram um espesso, maciço som, caracterizada por altas distorções amplificadas, prolongados solos de guitarra  e batidas enfáticas.</p>
+            <p>O Allmusic afirma que "de todos os formatos do rock 'n' roll, o heavy metal é a forma mais extrema, em termos de volume, machismo, e teatralidade".</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsa unde ipsam, tempora ea voluptatum! Vitae iusto excepturi quae. Sint obcaecati culpa quasi cumque ut. Voluptas omnis maiores facilis ut!</p>
+            <p>Omnis soluta minima, obcaecati eaque non commodi voluptatum voluptatibus voluptas consectetur repudiandae et! Est laudantium, inventore assumenda, enim doloremque sed optio dolor vitae adipisci rerum at qui rem ipsa labore.</p>
+            <p>Quas fugiat, laboriosam aliquam placeat mollitia, perspiciatis illo harum minus esse quam nulla similique debitis tenetur illum corrupti maxime! Dicta doloribus fugiat, sint numquam placeat doloremque minus corporis quaerat tenetur.</p>
+            <p><a href="#topo">Voltar ao topo</a></p>
+        </article>
+        <aside>
+            <h3>Mais informações sobre o assunto</h3>
+            <ul>
+                <li><a href="https://whiplash.net/" target="_blank">Whiplash</a></li>
+                <li><a href="https://www.wikimetal.com.br/" target="_blank">Wikimetal</a></li>
+            </ul>
+        </aside>
+    </main>
+    <!-- RODAPÉ -->
+    <footer>
+        <p class="divulgacao">Site desenvolvido por <a target="_blank" href="https://instagram.com/sloth.andre" rel="noopener noreferrer">André Marques</a> &copy; 2023</p>
+    </footer>
+</body>
+</html>

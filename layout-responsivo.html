@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: beige;
+        }
+        #container {
+            box-shadow: 0 0 10px #000;
+            padding: 1%;
+        }
+        header {
+            background-color: dodgerblue;
+            text-align: center;
+        }
+        /* CSS Reset:
+        Removemos o espaçamento padrão (do navegador) de algumas tags do site */
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #FF0;
+        }
+        #coluna-a {
+            background-color: darkseagreen;
+        }
+        #coluna-b {
+            background-color: orange;
+        }
+        #coluna-c {
+            background-color: pink;
+        }
+        footer {
+            background-color: gray;
+        }
+        h2,
+        p {
+            padding: 0.5rem;
+        }
+        /* Utilizamos min-height para garantir que todos tenham pelo menos a altura especificada (no caso 300px. Se necessário, cada um aumentará automaticamente) */
+        article {
+            min-height: 300px;
+        }
+        @media screen and (min-width: 700px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 80px;
+            }
+            nav {
+                height: 40px;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            main {
+                display: flex;
+                /* A propriedade flex-wrap habilita a "quebra" do flex, ou seja, os itens ficarão lado a lado enquanto houver espaço. Quando não houver, o próximo item irá para baixo. */
+                flex-wrap: wrap;
+            }
+            #coluna-a {
+                width: 60%;
+            }
+            #coluna-b {
+                width: 40%;
+            }
+            #coluna-c {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 900px) {
+            #coluna-a,
+            #coluna-b,
+            #coluna-c {
+                width: 33.33%;
+            }
+            #container {
+                max-width: 1100px;
+                margin: auto;
+            }
+            html {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Mobile First</h1>
+            <nav>
+                <a href="">Link</a>
+                <a href="">Link</a>
+                <a href="">Link</a>
+            </nav>
+        </header>
+        <main>
+            <article id="coluna-a">
+                <h2>Coluna A</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis voluptate est non perspiciatis ipsam.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, reiciendis laudantium doloribus ab aspernatur nobis itaque recusandae nulla consequatur commodi ad autem, vero dolor deleniti aliquid accusamus temporibus exercitationem ipsum.</p>
+            </article>
+            <article id="coluna-b">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum saepe quasi necessitatibus quo molestiae vel, natus iusto mollitia nam ducimus consectetur, ea repellendus unde et.</p>
+            </article>
+            <article id="coluna-c">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi nostrum nisi repellat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque magnam beatae ullam harum illo, quaerat ipsa! At cum, quam quasi nesciunt dolorem excepturi hic.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </article>
+        </main>
+        <footer>
+            <h2>Design Responsivo</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </footer>
+    </div>
+</body>
+</html>
